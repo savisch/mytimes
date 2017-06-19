@@ -8,13 +8,14 @@ body {
 
 /*HEADER SECTION*/
 header {
+    display: flex;
+    flex-direction: row;
     width: 100%;
     height: 80px;
     font-family: Verdana;
     font-size: 14px;
     font-weight: bold;
     border-bottom: 1px solid black;
-    display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
@@ -24,25 +25,30 @@ header {
     display: flex;
     align-items: center;
     padding-left: 20px;
+    min-width: 500px;
 }
 .logo span {
     color: mediumaquamarine;
     padding: 10px;
 }
-.header nav {
-   display: flex;
-   flex-wrap: no-wrap;
+.navigation {
    padding-right: 20px;
+   min-width: 300px;
 }
-nav span {
-    padding: 20px;
+.navigation span {
+    display: inline-block;
+    padding: 20px 10px;
 } 
+.navigation span a {
+    color: black;
+}
 
 
 /*CONTENT SECTION*/
 .content {
     display: flex;
 }
+
 /*FIRST COLUMN*/
 .columnlarge {
     width: 630px;
@@ -50,8 +56,8 @@ nav span {
     border: 3px solid black;
     display: flex;
     flex-direction: column;
-    margin-left: 50px;
     margin-top: 110px;
+    margin-right: 32px;
 }
 .leadstory {
     display: flex;
@@ -70,7 +76,6 @@ nav span {
     font-size: 40px;
     color: white;
     margin-left: 20px;
-    
 }
 .stories {
     display: flex;
@@ -83,14 +88,14 @@ nav span {
     height: 300px;
     background-image: url(../images/img-story-2.PNG);
     justify-content: center;
-    margin-top: 30px;
+    text-align: center;
+    margin-top: 40px;
     margin-right: 25px;
 }
 .imagestory2 span {
     font-weight: bold;
     font-size: 30px;
     color: white;
-    text-align: center;
     margin: 15px;
 }
 .imagestory3 {
@@ -98,24 +103,47 @@ nav span {
     flex-direction: column;
     height: 300px;
     width: auto;
-    background-image: url(../images/img-story-3.PNG);
     justify-content: center;
-    margin-top: 30px;
+    background-image: url(../images/img-story-3.PNG);
+    text-align: center;
+    margin-top: 40px;
     margin-right: 19px;
 }
 .imagestory3 span {
     font-weight: bold;
     font-size: 30px;
     color: white;
-    text-align: center;
 }
+
 /*SECOND COLUMN*/
 .columnmedium {
     width: 300px;
-    height: 1000px;
+    height: auto;
     border: 3px solid black;
     display: flex;
+    flex-direction: column;
     margin-top: 110px;
+    margin-right: 32px;
+}
+.story1 {
+    display: flex;
+    flex-direction: column;
+}
+.imagestory1 {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 300px;
+    justify-content: center;
+    background-image: url(../images/img-story-1.png);
+    text-align: center;
+    margin-top: 15px;
+}
+.imagestory1 span {
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    
 }
 /*THIRD COLUMN*/
 .columnsmall {
@@ -124,4 +152,5 @@ nav span {
     border: 3px solid black;
     display: flex;
     margin-top: 110px;
+    margin-right: 32px;
 }
